@@ -245,22 +245,17 @@ gap: 150px;
 border-radius: 15px;
 background-color: #16181c;
 padding: 10px;
-margin: 20px;
+margin: 5px;
 display: flex;
 flex-direction: column;
 gap: 1em;
   }
 
   .Trend{
-margin: 9px;
-justify-content: left;
-left: auto;
-  }
-
-
-  .follow{
-border-radius: 10px;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     
   }
 
   .btn{
@@ -306,7 +301,14 @@ border-radius: 10px;
 
 }
 
+.trending-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  
 
+  }
 
 
 

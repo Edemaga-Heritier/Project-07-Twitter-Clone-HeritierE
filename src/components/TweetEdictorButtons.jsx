@@ -1,8 +1,8 @@
 import Media  from '../images/Media.svg'
 import Gif  from '../images/Gif.svg'
-import Poll  from '../images/poll.svg'
+import Poll  from '../images/Poll.svg'
 import Emogi  from '../images/Emoji.svg'
-import schedule  from '../images/schedule.svg'
+import schedule  from '../images/Schedule.svg'
 
 
 const TweetEdictorButtons = () => {
