@@ -9,6 +9,7 @@ import More from "../images/More.svg";
 import More2 from "../images/More2.svg";
 import profiles from "../images/profile-photo.png";
 
+
 const Sidebar = () => {
   return (
     <>
@@ -60,8 +61,10 @@ const Sidebar = () => {
         </div>
 
         <div className="profil">
-          <img src={profiles} alt="" />
-
+          <div className="i">
+            <img src={profiles}  />
+          </div>
+          
           <div className="icon">
             <span className="tweet-title-author"> pioche</span>
             <img src={More2} alt="" />
@@ -75,3 +78,4 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+

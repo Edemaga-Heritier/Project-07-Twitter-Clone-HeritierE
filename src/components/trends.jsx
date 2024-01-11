@@ -5,78 +5,71 @@ import Search from "../images/search.svg";
 import Setting from "../images/gear.svg";
 import More2 from "../images/More2.svg";
 
-import React from "react";
+
+
 
 const trends = () => {
   return (
-    <>
-      <div className="sidebar">
-        <div className="search">
-          <img src={Search} />
-          <input placeholder="Search Twitter" type="text" />
-        </div>
+    <div className="Trends"> 
+     <div className="search-bar">
+    <img src={Search} alt="Search icon" />
+    <input className="search-input" type="text" placeholder="Search Twitter" />
+  </div>
 
-        <div className="Trends">
-          <div className="Trend">
-            <h2>Trends for you</h2>
-            <img src={Setting} alt="setting" />
-          </div>
+  <div className="trending-items">
+    <div className="trends-header">
+      <h2>Trends for you</h2>
+      <img src={Setting} alt="Settings" />
+    </div>  
+      <TrendingItem topic="#SQUID" tweetsCount="2,006" location="turkey" />
+      <TrendingItem topic="#SQUID" tweetsCount="2,006" location="turkey" />
+      <TrendingItem topic="#SQUID" tweetsCount="2,006" location="turkey" />
+  
+    </div>
+  
 
-          <div>
-            <div className="trending-item">
-              <p> Trending for turkey</p>
-              <img src={More2} />
-            </div>
-            <p>#SQUID</p>
-            <p>2,006 Tweets</p>
-          </div>
+  <div className="follow">
+    <h2>Who to follow</h2>
+    <FollowSuggestion profile={Times} username="@nytimes" name="The New York Times" />
+    <FollowSuggestion profile={CNN} username="@CNN" name="The New York Times" />
+    <FollowSuggestion profile={Twitter} username="@Twitter" name="The New York Times" />
+    <a href="#">Show More</a>
+  </div>
+  </div>
+     
+   
+  );
+};
 
-          <div>
-            <div className="trending-item">
-              <p> Trending for turkey</p>
-              <img src={More2} />
-            </div>
-            <p>#SQUID</p>
-            <p>2,006 Tweets</p>
-          </div>
-
-          <div>
-            <div className="trending-item">
-              <p> Trending for turkey</p>
-              <img src={More2} alt="" />
-            </div>
-            <p>#SQUID</p>
-            <p>2,006 Tweets</p>
-          </div>
-        </div>
-
-        <div className="Trends">
-          <div>
-            <h2>who to follow </h2>
-            <img src={Times} />
-            <p> The New York Times</p>
-            <p>@nytimes</p>
-            <button className="buttons">Follow</button>
-          </div>
-
-          <div>
-            <img className="" src={CNN} alt="" />
-            <p> The New York Times</p>
-            <p>@CNN</p>
-            <button className="buttons">Follow</button>
-          </div>
-
-          <div>
-            <img className="" src={Twitter} alt="" />
-            <p> The New York Times</p>
-            <p>@Twitter</p>
-            <button className="buttons">Follow</button>
-          </div>
-
-          <a href="#">Show More</a>
-        </div>
+// Separate components for reusability and better organization
+const TrendingItem = ({ topic, tweetsCount, location }) => {
+  return (
+    <div className="trending-item">
+      <div className="trends-header">
+        <p>{location ? `Trending for ${location}` : 'Trending'}</p>
+        <img src={More2} alt="More" />
       </div>
-    </>
+      <div >
+      <p className=" topic">{topic}</p>
+      <p className=" topics" >{tweetsCount} Tweets</p>
+      </div>
+      
+    </div>
+  );
+};
+
+const FollowSuggestion = ({ profile, username, name }) => {
+  return (
+    <>
+    <div className="follow-suggestion">
+    <img src={profile} alt={name} />
+    <p>{name}</p>
+    <p>{username}</p>
+    
+  </div>
+  <button className="buttons">Follow</button>
+  </>
+    
   );
 };
 
