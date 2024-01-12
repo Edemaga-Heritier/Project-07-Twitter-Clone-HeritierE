@@ -32,16 +32,17 @@ const trends = () => {
     <h2>Who to follow</h2>
     <FollowSuggestion profile={Times} username="@nytimes" name="The New York Times" />
     <FollowSuggestion profile={CNN} username="@CNN" name="The New York Times" />
-    <FollowSuggestion profile={Twitter} username="@Twitter" name="The New York Times" />
+    <FollowSuggestion profile={Twitter} username="@Twitter" name="The New York Times" />  
     <a href="#">Show More</a>
   </div>
+
   </div>
      
    
   );
 };
 
-// Separate components for reusability and better organization
+
 const TrendingItem = ({ topic, tweetsCount, location }) => {
   return (
     <div className="trending-item">

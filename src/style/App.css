@@ -146,12 +146,15 @@ body{
 .tweet-title svg{
     width: 1.2rem;
     height: auto;
+    
 }
 .tweet-title-author{
     font-size: 1rem;
+    
 }
 .tweet-title-details{
     color: #6E767D;
+    
 }
 .tweet-text{
     color: #D9D9D9;
@@ -192,6 +195,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 20px;
+    cursor: pointer;
 }
 
 .sidebar{
@@ -321,6 +325,7 @@ gap: 150px;
         padding-left: 70px;
         padding-right:70px ;
         align-items: center;
+        cursor: pointer;
   }
 
 
