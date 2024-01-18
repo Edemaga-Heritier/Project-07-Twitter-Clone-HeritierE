@@ -2,6 +2,8 @@ import Home from "./pages/home.jsx";
 import Explore from "./pages/explore.jsx";
 import Notification from "./pages/Notification.jsx";
 import Profile from "./pages/Profile.jsx";
+import Lists from "./pages/Lists.jsx";
+
 import { BrowserRouter ,Routes ,Route } from "react-router-dom";
 
 
@@ -19,6 +21,7 @@ export default function App() {
         <Route path="Explore" element={<Explore />} />
         <Route path="Notification" element={<Notification />} />
         <Route path="Profile" element={<Profile />} />
+        <Route path="Lists" element={<Lists />} />
         
       </Routes>
     </BrowserRouter>

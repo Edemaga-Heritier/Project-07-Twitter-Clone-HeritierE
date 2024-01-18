@@ -226,21 +226,43 @@ top:0;
     
 }
 
+li:hover{
+    cursor: pointer;
+    background-color: #181818;
+    transition: #181818 100ms ease-out;
+    border-radius: 20px;
+}
+
 .profil {
     
-        margin-top: 40px;
+        margin-top: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        flex: 0 0 40px;
+        margin: 0 auto;
         
 
       }
 
       .icon{
 display: flex;
-gap: 150px;
+justify-content: space-evenly;
+align-items: center;
+padding: 7px
 
+      }
+      .details{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: 7px;
+      align-items: center;
+      margin: 10px;
       }
 
       .i{
-        width: 5%;
+        max-width: 50%;
+    max-height: 100px;
+    border-radius: 100%;
        
         
       }
@@ -283,12 +305,14 @@ gap: 150px;
   }
 
   .trending-items{
-    border-radius:20px ;
+    border-radius:15px ;
     background-color: #2F3336;
     padding: 10px;
     padding-left: 5px;
     margin-top: 10px;
     height: 400px;
+    padding-right: 5px;
+    
   }
   .trends-header{
     display: flex;
@@ -338,18 +362,51 @@ gap: 150px;
     color: black;
     font-size: 1rem;
     margin-left: 12px;
+    cursor: pointer;
 }
 
 .follow{
     
-    border-radius:20px;
+    border-radius:15px;
     background-color: #2F3336;
     padding:15px ;
     margin-top: 10px;
     margin-bottom: 20px;
     padding-bottom: 10px;
+    width: auto;
     
 }
 
+.follow-suggestion{
+ display: flex;
+ justify-content: space-between; 
+}
+
+.follow-suggestions{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+link{
+    text-decoration: none;
+    color: #FFF;
+}
   
     
+.sidebar-link {
+    text-decoration: none; 
+    color: #ffff; 
+  }
+  
+  .sidebar-link:hover {
+    color: #007bff; 
+  }

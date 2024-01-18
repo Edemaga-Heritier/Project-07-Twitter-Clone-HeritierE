@@ -63,7 +63,7 @@ const tweets = [
 
 
 function Tweet({ tweet }) {
-    const [valueReply,setvalueReply] =useState(tweet.valueReply)
+    const [valueFavorite,setvalueFavorite] =useState(tweet.valueFavorite)
   return (
     <div className="tweet">
       <div className="tweet-avatar">
@@ -84,11 +84,11 @@ function Tweet({ tweet }) {
           {tweet.tweetImage && <img src={tweet.tweetImage} alt="tweet-image" className="tweet-image" />}
         </div>
         <TweetAction
-          valueReply={valueReply}
+          valueReply={tweet.valueReply}
           valueRetweet={tweet.valueRetweet}
-          valueFavorite={tweet.valueFavorite}
+          valueFavorite={valueFavorite}
           valuereReolies={tweet.valuereReolies}
-          onReply={()=>setvalueReply((prevReplyCount)=>prevReplyCount +1)}
+          onReply={()=>setvalueFavorite((prevFavoriteCount)=>prevFavoriteCount +1)}
         />
       </div>
     </div>
@@ -106,6 +106,3 @@ function Date() {
 }
 
 export default Date;
-
-
-
