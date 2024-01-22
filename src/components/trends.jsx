@@ -7,8 +7,6 @@ import More2 from "../images/More2.svg";
 import { useState } from "react";
 
 
-
-
 const trends = () => {
   const [searchText,setSearchText]=useState('')
   return (
@@ -72,11 +70,11 @@ const FollowSuggestion = ({ profile, username, name }) => {
     <div className="follow-suggestion">
     <img src={profile} alt={name} />
     <p>{name}</p>
-    
+    <p>{username}</p>
     
   </div>
   <div className="follow-suggestions">
-  <p>{username}</p>
+  
   <button className="buttons">Follow</button>
 
   </div>

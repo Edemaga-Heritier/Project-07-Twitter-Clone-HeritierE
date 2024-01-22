@@ -85,25 +85,26 @@ const Sidebar = () => {
           <button className="btn">tweet</button>
         </div>
 
-        <div className="profil">
-          <div className="i">
-            <img src={profiles} 
+        <span className="profil">
+          <Link to='/Profile'>
+          <img src={profiles} 
             style={{
-              width:user.imageSize
-              
+              width:user.imageSize 
             }}
             />
-
-          </div>
+          </Link>
           
-          <div className="icon">
-            <span className="tweet-title-author"> pioche</span>
-            <img src={More2} alt="" />
-          </div>
+<span className="profil-title"> 
+<h3><Link className="sidebar-link" to ='/Profile'>Pioche</Link> <img src={More2} alt="" /> </h3>
+           <p>@pioche</p>
+            </span>
+          </span>
+          
+         
 
-          <span className="tweet-title-details">@pioche</span>
+          
         </div>
-      </div>
+    
     </>
   );
 };

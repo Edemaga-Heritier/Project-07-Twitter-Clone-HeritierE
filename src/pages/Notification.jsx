@@ -1,8 +1,17 @@
-import React from 'react'
+import Sidebar from '../components/sidebar';
+import Trends from '../components/trends';
 
-function Notification() {
+const Notification = () => {
   return (
-    <div>Notification</div>
+    <>
+    <Sidebar/>
+    <div className="timeline">
+
+      <p>bonjour</p>
+    </div>
+    <Trends />
+    
+    </>
   )
 }
 
