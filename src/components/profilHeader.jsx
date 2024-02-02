@@ -1,13 +1,9 @@
-import Sidebar from '../components/sidebar';
-import Trends from '../components/trends';
 
 
-const profile = () => {
+export const profilHeader = () => {
   return (
-    <>
-    <Sidebar/>
-    <div className="timeline">
-    <div className="top">
+    <Header>
+      <div className="top">
         <button >
         pioche
         </button>
@@ -19,11 +15,7 @@ const profile = () => {
       <div className="cover">
         <img src="" alt="" />
       </div>
-    </div>
-    <Trends />
-    
-    </>
+    </Header>
   )
 }
 
-export default profile

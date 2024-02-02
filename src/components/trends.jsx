@@ -68,16 +68,20 @@ const FollowSuggestion = ({ profile, username, name }) => {
   return (
     <>
     <div className="follow-suggestion">
-    <img src={profile} alt={name} />
-    <p>{name}</p>
-    <p>{username}</p>
+    <img src={profile}  />
+    <span className="name">{name}</span> 
+    <button className="buttons">Follow</button>
     
-  </div>
-  <div className="follow-suggestions">
-  
-  <button className="buttons">Follow</button>
+    </div>
+    <span>{username}</span>
 
-  </div>
+   
+    
+  
+    
+   
+ 
+ 
   
  
   </>

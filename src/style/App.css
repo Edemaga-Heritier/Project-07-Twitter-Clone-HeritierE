@@ -1,4 +1,4 @@
-@tailwind base;
+ /* @tailwind base; */
 @tailwind components;
 @tailwind utilities;
 
@@ -222,7 +222,7 @@ top:0;
 
 .content{
     list-style: none;
-      padding: 10px;  
+    padding: 10px;  
      flex-direction: row; 
      justify-content: flex-start; 
     align-items: flex-start; 
@@ -388,18 +388,39 @@ flex-direction: column ;
     margin-bottom: 20px;
     padding-bottom: 10px;
     width: auto;
+    height: auto;
     
 }
 
 
- 
 
-
-.follow-suggestions,.follow-suggestion{
+.follow-suggestion{
     display: flex;
-  
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 20px;
     
 }
+.follow-suggestion img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .follow-suggestion h5 {
+    margin-left: 5px;
+  }
+  
+  .follow-suggestion span {
+    margin-left: 10px;
+  }
+  
+  .follow-suggestion .buttons {
+    margin-left: 10px;
+  }
+
+
+
 
 a{
     text-decoration: none;
@@ -422,18 +443,57 @@ a:hover{
     color: #007bff; 
   }
 
-  /* Add this to your CSS file */
-.favorite-icon {
-    /* Default style */
-    fill: #f70909; /* Default fill color */
+  .favorite-icon {
+    color: gray; /* Unfavorited state */
   }
   
   .favorite-icon.favorited {
-    /* Style when hovered (or favorited) */
-    fill: rgb(173, 170, 170); /* Fill color on hover */
-    filter: brightness(120%); /* Optional additional effect */
+    color: red; /* Favorited state */
+  }
+  .favorite-icon {
+    fill: gray; /* Unfavorited state */
+  }
+  
+  .favorite-icon.favorited {
+    fill: red; /* Favorited state */
   }
   
   
+  
+  .top {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    width: 100%;
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.5);
 
+    .info {
+      margin-left: 30px;
+
+      h1 {
+        font-size: 20px;
+      }
+
+      &__tweets-count {
+        font-size: 14px;
+        margin-top: 2px;
+        color: #888;
+      }
+    }
+  }
+
+  .cover {
+    width: 100%;
+    background-color: #555;
+    height: 200px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
   
