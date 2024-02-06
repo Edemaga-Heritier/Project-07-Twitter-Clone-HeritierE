@@ -4,11 +4,11 @@ export const profilHeader = () => {
   return (
     <Header>
       <div className="top">
-        <button >
+        <button  >
         pioche
         </button>
         <div className="info">
-          <h1>edems</h1>
+          <h1 className="">edems</h1>
           <span className="info__tweets-count"> Tweets</span>
         </div>
       </div>
