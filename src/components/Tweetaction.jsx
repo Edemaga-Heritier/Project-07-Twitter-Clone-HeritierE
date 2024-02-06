@@ -14,12 +14,10 @@ const TweetAction = ({
     const [isFavorited, setIsFavorited] = useState(valueFavorite);
     const [count, setCount] = useState(0)
   
-    const changeIcon = () => {
-        setIsFavorited(!isFavorited);
-      };
+   
     
       const handleClick = () => {
-        setCount((count) => (isFavorited ? count - 1 : count + 1)); // Update count based on previous value
+        setCount((count) => (isFavorited ? count + 1 : count -1)); // Update count based on previous value
         setIsFavorited(!isFavorited); // Toggle favorite state
       };
 
@@ -48,11 +46,11 @@ const TweetAction = ({
                     width: '24px', 
                     transition: '0.2s ease-in-out all', 
                     cursor: 'pointer', 
+                    fill: isFavorited ? 'red' : 'initial'
                   }}
                 />
-                {isFavorited && count > 0 && ( // Only show count if favorited and count > 0
-          <div className="favorite-count">{count}</div> // Display count in separate element
-        )}
+                {isFavorited ? '1' : '2'} 
+               
             </div>
             
             <div className="tweet-action">
