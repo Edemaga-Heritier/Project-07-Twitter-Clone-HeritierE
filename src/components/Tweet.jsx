@@ -1,6 +1,9 @@
 import { useState } from "react";
 import TweetAction from "./Tweetaction";
 
+
+
+
 const tweets = [
     {
         texte: "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a major breakthrough that would serve to both strengthen the US steel industry and combat the global climate crisis.",
@@ -11,7 +14,7 @@ const tweets = [
         avatar: "src/images/CNN.png",
         tweetImage: "",
         favorite: "180",
-        valueReply: "",
+        valueReply: "266",
         valueRetweet: "144",
         valueFavorite: "184",
         valueReolies: "",

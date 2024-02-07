@@ -49,7 +49,9 @@ const TweetAction = ({
                     fill: isFavorited ? 'red' : 'initial'
                   }}
                 />
+                <div style={{ color: isFavorited ? '' : 'red' }}>
                 {isFavorited ? '1' : '2'} 
+                </div>
                
             </div>
             

@@ -33,7 +33,8 @@ const trends = () => {
     </div>
   
 
-  <div className="follow">
+  <div className="rounded-lg bg-slate-800 text-white py-4 px-6 mt-4 mb-8
+">
     <h3>Who to follow</h3>
     <FollowSuggestion profile={Times} username="@nytimes" name="The New York Times" />
     <FollowSuggestion profile={CNN} username="@CNN" name="The New York Times" />
