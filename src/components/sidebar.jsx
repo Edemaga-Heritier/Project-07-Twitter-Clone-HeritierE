@@ -20,7 +20,7 @@ const Sidebar = () => {
       <div className="sidebar">
         <ul>
           <div>
-            <li className="flex-row justify-start items-start flex gap-2 p-3 list-none hover:bg-gray-700 cursor-pointer rounded-3xl transition duration-150 ease-in-out">
+            <li className="">
               <img src={Twitter} alt="" />
             </li>
           </div>
