@@ -298,12 +298,19 @@ flex-direction: column ;
   }
 
   .search-bar{
-    display: flex;
-    border-radius: 20px;
-    background-color: #2F3336;
-    padding: 10px;
-    margin: 10px 10px 10px 10px;
-    justify-content: right;
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  color: #202124;
+  display: flex;
+  z-index: 3;
+  height: 44px;
+  
+  border: 1px solid #dfe1e5;
+  box-shadow: none;
+  border-radius: 24px;
+  margin: 0 auto;
+  width: auto;
+  max-width: 224px;
     
     
 }
@@ -312,9 +319,8 @@ flex-direction: column ;
     width: 100%;
         background: none;
         border: none;
-        background-color:#2F3336;
         font-size: 15px;
-        color: white;
+        color: rgb(14, 13, 13);
         outline:none ;
   }
 

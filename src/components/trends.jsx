@@ -10,8 +10,8 @@ import { useState } from "react";
 const trends = () => {
   const [searchText,setSearchText]=useState('')
   return (
-    <div className="Trends"> 
-     <div className="search-bar">
+    <div className="flex flex-col pt-3  pl-2.5 pr-7 pb-2.5 w-full h-2/5 "> 
+     <div className=" flex bg-slate-500 p-2.5 rounded-3xl justify-end m-2.5 h-11">
     <img src={Search} alt="Search icon" />
     <input className="search-input" 
     type="text"
