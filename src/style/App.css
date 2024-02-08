@@ -231,12 +231,12 @@ top:0;
     
 }
 
-li:hover{
+/* li:hover{
     cursor: pointer;
     background-color: #181818;
     transition: #181818 100ms ease-out;
     border-radius: 20px;
-}
+} */
 .profil:hover{
     cursor: pointer;
     background-color: #181818;
@@ -352,7 +352,7 @@ flex-direction: column ;
 
   .btn{
         text-transform: capitalize;
-        padding: .7rem 1.5rem;
+        padding:  1rem;
         border: none;
         border-radius: 50px;
         background-color: #1D9BF0;

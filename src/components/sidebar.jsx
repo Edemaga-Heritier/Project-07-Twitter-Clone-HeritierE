@@ -20,60 +20,60 @@ const Sidebar = () => {
       <div className="sidebar">
         <ul>
           <div>
-            <li className="content">
+            <li className="flex-row justify-start items-start flex gap-2 p-3 list-none hover:bg-gray-700 cursor-pointer rounded-3xl transition duration-150 ease-in-out">
               <img src={Twitter} alt="" />
             </li>
           </div>
 
-          <li className="content">
+          <li className="flex-row justify-start items-start flex gap-2 p-3 list-none hover:bg-gray-700 cursor-pointer rounded-3xl transition duration-150 ease-in-out ">
             <Link to="/" className="sidebar-link">
               <img src={Home} alt="" />
               <span> Home</span>
             </Link>
           </li>
 
-          <li className="content">
+          <li className="flex-row justify-start items-start flex gap-2 p-3 list-none hover:bg-gray-700 cursor-pointer rounded-3xl transition duration-150 ease-in-out">
             <Link to="/explore" className="sidebar-link">
               <img src={Explore} alt=" " />
               <span className="ver">Explore </span>
             </Link>
           </li>
 
-          <li className="content">
+          <li className="flex-row justify-start items-start flex gap-2 p-3 list-none hover:bg-gray-700 cursor-pointer rounded-3xl transition duration-150 ease-in-out">
             <Link to="/notifications" className="sidebar-link">
               <img src={Notifications} alt=" " />
               <span>Notifications</span>
             </Link>
           </li>
 
-          <li className="content">
+          <li className="flex-row justify-start items-start flex gap-2 p-3 list-none hover:bg-gray-700 cursor-pointer rounded-3xl transition duration-150 ease-in-out">
             <Link to="/bookmarks" className="sidebar-link">
               <img src={Bookmarks} alt="" />
               <span>BooksMarks </span>
             </Link>
           </li>
 
-          <li className="content">
+          <li className="flex-row justify-start items-start flex gap-2 p-3 list-none hover:bg-gray-700 cursor-pointer rounded-3xl transition duration-150 ease-in-out">
             <Link to="/lists" className="sidebar-link">
               <img src={Lists} alt="" />
               <span>Lists</span>
             </Link>
           </li>
 
-          <li className="content">
+          <li className="flex-row justify-start items-start flex gap-2 p-3 list-none hover:bg-gray-700 cursor-pointer rounded-3xl transition duration-150 ease-in-out">
             <Link to="/profile" className="sidebar-link">
               <img src={Profile} alt="" />
               <span>Profile</span>
             </Link>
           </li>
 
-          <li className="content">
+          <li  className="flex-row justify-start items-start flex gap-2 p-3 list-none hover:bg-gray-700 cursor-pointer rounded-full transition duration-150 ease-in-out">
             <img src={More} alt="" />
             <span>More</span>
           </li>
         </ul>
         <div>
-          <button className="btn">tweet</button>
+          <button className=" capitalize  p-4 border-none rounded-2xl bg-cyan-500 text-white cursor-pointer items-center text-base m-2 mt-13 px-16 ">tweet</button>
         </div>
 
         <span className="profil">
@@ -89,9 +89,9 @@ const Sidebar = () => {
           <span className="profil-title">
             <h3>
               <Link className="sidebar-link" to="/Profile">
-                Pioche
-              </Link>{" "}
-              <img src={More2} alt="" />{" "}
+    
+              </Link>
+              <img src={More2} alt="" />
             </h3>
             <p>@pioche</p>
           </span>
