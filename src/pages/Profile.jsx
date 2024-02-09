@@ -13,13 +13,13 @@ const profile = () => {
     <span>38.7k Tweets</span>
       </div> 
     
-                <div class="headerprofileimage">
+                <div className="headerprofileimage">
                     <img src="https://res.cloudinary.com/dowrygm9b/image/upload/v1570267399/laptop-3174729_yiprzu.jpg" alt="header" id="headerimage"/>
                     <img src="https://res.cloudinary.com/dowrygm9b/image/upload/v1570267399/laptop-3174729_yiprzu.jpg" alt="profile pic" id="profilepic"/>
-                    <div class="editprofile">Edit Profile</div>
+                    <div className="editprofile">Edit Profile</div>
                 </div>
-                <div class="bio">
-                    <div class="handle">
+                <div className="bio">
+                    <div className="handle">
                         <h3>Soy Segun</h3>
                         <span>@segun_OS</span>
                     </div>
@@ -27,12 +27,12 @@ const profile = () => {
                     <p>Front-end web developer |</p>
                     <p>Barça fan |</p>
                     <span>@Awelagos @4topsports</span> 
-                    <span> <i class="fa fa-location-arrow "></i> Lagos, Nigeria. <a href="#"> <i
+                    <span class="fa fa-location-arrow "> Lagos, Nigeria. <a href="#"> <i
                                 class="fa fa-external-link" aria-hidden="true"></i>linkedin.com/in/segun-olani… </a> <i
                             class="fa fa-birthday-cake" aria-hidden="true"></i> Born November 10</span>
                      <span><i class="fa fa-calendar"></i> Joined May 2013</span>
-                    <div class="nawa">
-                        <div class="followers"> 421 <span>Following</span></div>
+                    <div className="nawa">
+                        <div className="followers"> 421 <span>Following</span></div>
                         <div>1519<span> Followers</span></div>
                     </div>
                 
